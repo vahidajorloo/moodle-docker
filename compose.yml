@@ -32,6 +32,9 @@ services:
       - MOODLE_PASSWORD=admin
       - MOODLE_HOST=EXAMPLE.COM
       - MOODLE_SSLPROXY=true
+      - PHP_DEFAULT_MEMORY_LIMIT=2048M
+      - PHP_DEFAULT_MAX_INPUT_VARS=10000
+
     volumes:
       - 'moodle_data:/bitnami/moodle'
       - 'moodledata_data:/bitnami/moodledata'
